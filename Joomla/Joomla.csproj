@@ -84,6 +84,7 @@
     <Compile Include="Interface\InHomePage.cs" />
     <Compile Include="Interface\InLoginPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestCases\CommitGITHUB.cs" />
     <Compile Include="TestCases\TC_JOOMLA_ARTICLE_001.cs" />
     <Compile Include="TestCases\TC_JOOMLA_ARTICLE_001.feature.cs">
       <AutoGen>True</AutoGen>
