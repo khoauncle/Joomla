@@ -1,0 +1,17 @@
+﻿[
+  {
+    "controlName": "txtUserName",
+    "type": "xpath",
+    "value": "//input[@id='mod-login-username']"
+  },
+  {
+    "controlName": "txtPassword",
+    "type": "xpath",
+    "value": "//input[@id='mod-login-password']"
+  },
+  {
+    "controlName": "btnLogin",
+    "type": "xpath",
+    "value": "//button[@class='btn btn-primary btn-block btn-large']"
+  }
+]

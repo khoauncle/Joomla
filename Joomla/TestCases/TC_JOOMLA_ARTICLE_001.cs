@@ -27,10 +27,10 @@ namespace Joomla.TestCases
             Console.WriteLine("Step3: Enter valid password into Password field");
             Console.WriteLine("Step4: Click on 'Log in' button");
 
-            string username = "long.ngoc.nguyen";
-            string password = "123456";
-            AcLoginPage acloginPage = new AcLoginPage(driver);
-            acloginPage.Login(username, password);
+            //string username = "long.ngoc.nguyen";
+            //string password = "123456";
+            //AcLoginPage acloginPage = new AcLoginPage(driver);
+           // acloginPage.Login(username, password);
 
             Console.WriteLine("Step5: Select Content > Article Manager");
             Console.WriteLine("Step6: Click on 'New' icon of the top right toolbar");

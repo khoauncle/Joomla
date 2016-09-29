@@ -3,54 +3,50 @@ using TechTalk.SpecFlow;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using Joomla.Action;
+using Joomla.Common;
 
 namespace Joomla.TestCases
 {
     [Binding]
     public class TC_JOOMLA_ARTICLE_001Steps
     {
-        public static IWebDriver driver;
-
+        BaseAction Browser = new BaseAction();
+        private LoginPage LoginPage;
+        
         [Given(@"Open Firefox Browser")]
         public void GivenOpenFirefoxBrowser()
         {
-            driver = new FirefoxDriver();
-            
-            driver.Manage().Window.Maximize();
+            Browser.OpenBrowser();
         }
         
         [Given(@"Navigate to the URL: ""(.*)""")]
-        public void GivenNavigateToTheURL(string p0)
+        public void GivenNavigateToTheURL(string URL)
         {
-            driver.Navigate().GoToUrl(p0);
+            Browser.navigateURL(URL);
         }
 
         [Given(@"Enter username ""(.*)"" and password ""(.*)""")]
         public void GivenEnterUsernameAndPassword(string username, string password)
         {
-            AcLoginPage acloginPage = new AcLoginPage(driver);
-            acloginPage.Login(username, password);
+            LoginPage.Login(username,password);
         }
       
         [Given(@"Click on Create Article link")]
         public void GivenClickOnCreateArticleLink()
         {
-            AcHomePage acHomepage = new AcHomePage(driver);
-            acHomepage.OpenCreateArticleForm();
+            ScenarioContext.Current.Pending();
         }
 
         [Given(@"Enter ""(.*)"" ""(.*)"" ""(.*)"" on Title, Category, Content field")]
         public void GivenEnterOnTitleCategoryContentField(string title, string category, string content)
         {
-            AcCreateArticlePage acCreateArticlePage = new AcCreateArticlePage(driver);
-            acCreateArticlePage.FillArticleInfor(title, category, content);
+            ScenarioContext.Current.Pending();
         }
        
         [When(@"Click on ""(.*)"" icon of the top right toolbar")]
         public void WhenClickOnIconOfTheTopRightToolbar(string p0)
         {
-            AcCreateArticlePage acCreateArticlePage = new AcCreateArticlePage(driver);
-            acCreateArticlePage.ClickArticleButton("Save & Close");
+            ScenarioContext.Current.Pending();
         }
                
         [Then(@"Verify the article is saved successfull")]
