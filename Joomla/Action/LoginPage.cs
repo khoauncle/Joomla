@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Joomla.Interface;
 using OpenQA.Selenium;
 using Joomla.Common;
 
@@ -12,6 +11,11 @@ namespace Joomla
         
    public class LoginPage : BaseAction
     {
+        public void OpenCreateArticleForm()
+        {
+            click("lnkNewArticle");
+        }
+
         public void Login(string username, string password)
         {
             type("txtUserName", username);

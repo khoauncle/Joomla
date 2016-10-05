@@ -10,6 +10,8 @@ namespace Joomla.TestCases
     [Binding]
     public sealed class ConfigTestCase:Browser
     {
+  
+
         [Given(@"Open Firefox Browser")]
         public void GivenOpenFirefoxBrowser()
         {
@@ -21,6 +23,10 @@ namespace Joomla.TestCases
         public void GivenNavigateToTheURL(string URL)
         {
             navigateURL(URL);
+        }
+
+        public static void Main(string[] args)
+        {
         }
     }
 }

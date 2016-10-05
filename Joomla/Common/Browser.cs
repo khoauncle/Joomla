@@ -24,5 +24,10 @@ namespace Joomla.Common
             driver.Navigate().GoToUrl(strUrl);
             driver.Manage().Window.Maximize();
         }
+
+        public void closeBrowser()
+        {
+            driver.Close();
+        }
     }
 }

@@ -1,0 +1,22 @@
+﻿[
+  {
+    "controlName": "txtTitleArticle",
+    "type": "xpath",
+    "value": "//input[@id='jform_title']"
+  },
+  {
+    "controlName": "txtContentArticle",
+    "type": "xpath",
+    "value": "//textarea[@id='jform_articletext']"
+  },
+  {
+    "controlName": "btnSaveAndClose",
+    "type": "xpath",
+    "value": "//div[@id='toolbar-save']/button"
+  },
+  {
+    "controlName": "btnToggleEditor",
+    "type": "xpath",
+    "value": "//a[@title='Toggle editor']"
+  }
+]

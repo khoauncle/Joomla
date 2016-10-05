@@ -1,0 +1,7 @@
+﻿[
+  {
+    "controlName": "lblMessage",
+    "type": "xpath",
+    "value": "//div[@id='system-message-container']//div[@class='alert-message']"
+  }
+]

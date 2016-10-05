@@ -38,15 +38,9 @@ namespace Joomla.Common
             string path = Directory.GetParent(System.Reflection.Assembly.GetExecutingAssembly().Location).FullName;
             path = path.Replace("\\bin\\Debug", "");
              string content = string.Empty;
-            switch (page)
-            {
-                case "LoginPage":
-                    content = File.ReadAllText(path + @"\Interface\" + page + ".json");
-                    break;
-                default:
-                    break;
-            }
-
+  
+            content = File.ReadAllText(path + @"\Interface\" + page + ".json");
+            
             JavaScriptSerializer ser = new JavaScriptSerializer();
             control[] result = ser.Deserialize<control[]>(content);
             string[] getControl = new string[2];
@@ -98,10 +92,11 @@ namespace Joomla.Common
             FindElement(ElementPath).SendKeys(strText);
         }
 
-        public void closeBrowser()
+        public string getControlText(String ElementPath)
         {
-            driver.Close();
-        }
+           string strMessage = FindElement(ElementPath).GetAttribute("textContent");
+            return strMessage;
+        }    
 
     }
 }

@@ -24,7 +24,7 @@ namespace Joomla.Features
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "TC_JOOMLA_ARTICLE_001.feature"
+#line 1 "TC_JOOMLA_ARTICLE.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
@@ -70,7 +70,7 @@ namespace Joomla.Features
 #line 7
  testRunner.Given("Open Firefox Browser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 8
- testRunner.Given("Navigate to the URL: \"http://192.168.189.119/abyssal/administrator/index.php\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("Navigate to the URL: \"http://localhost/Joomla/administrator/index.php\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
         }
         
@@ -81,20 +81,20 @@ namespace Joomla.Features
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create new article with valid information", new string[] {
                         "mytag"});
-#line 10
+#line 12
 this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
-#line 11
- testRunner.Given("Enter username \"long.ngoc.nguyen\" and password \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 12
- testRunner.Given("Click on Create Article link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 13
- testRunner.Given("Enter \"Shen Title\" \"Uncategory\" \"Shen Content\" on Title, Category, Content field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("Enter username \"admin\" and password \"admin\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 14
- testRunner.When("Click on \"Save & Close\" icon of the top right toolbar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("Click on Create Article link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 15
- testRunner.Then("Verify the article is saved successfull", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Given("Enter \"Shen Title\" \"Uncategory\" \"Shen Content\" on Title, Category, Content field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 16
+ testRunner.When("Click on \"Save & Close\" icon of the top right toolbar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 17
+ testRunner.Then("Verify the article is saved successfull with text: \'Article successfully saved.\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

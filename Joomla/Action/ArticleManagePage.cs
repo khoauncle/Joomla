@@ -3,18 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OpenQA.Selenium;
 using Joomla.Common;
+using NUnit.Framework;
 
 namespace Joomla.Action
 {
-    public class HomePage:BaseAction
+    public class ArticleManagePage:BaseAction
     {
-
-        public void OpenCreateArticleForm()
+        public void VerifySuccessfullyMessage(string message)
         {
-            click("lnkNewArticle");
-            
+            Assert.AreEqual(getControlText("lblMessage"),message);
         }
     }
 }

@@ -13,6 +13,7 @@ namespace Joomla.Steps
         [Given(@"Click on Create Article link")]
         public void GivenClickOnCreateArticleLink()
         {
+            Console.WriteLine("Enter Create new article...");
             OpenCreateArticleForm();
         }
     }

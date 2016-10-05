@@ -77,21 +77,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Action\AcCreateArticlePage.cs" />
+    <Compile Include="Action\ArticleManagePage.cs" />
+    <Compile Include="Action\CreateArticlePage.cs" />
     <Compile Include="Action\HomePage.cs" />
     <Compile Include="Action\LoginPage.cs" />
     <Compile Include="Common\BaseAction.cs" />
-    <Compile Include="Common\CommonActions.cs" />
     <Compile Include="Common\Browser.cs" />
-    <Compile Include="Common\PageFactory.cs" />
-    <Compile Include="Interface\InCreateArticlePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Steps\ArticleManageSteps.cs" />
     <Compile Include="Steps\BaseSteps.cs" />
-    <Compile Include="Features\TC_JOOMLA_ARTICLE_001.feature.cs">
+    <Compile Include="Features\TC_JOOMLA_ARTICLE.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TC_JOOMLA_ARTICLE_001.feature</DependentUpon>
+      <DependentUpon>TC_JOOMLA_ARTICLE.feature</DependentUpon>
     </Compile>
+    <Compile Include="Steps\CreateArticleSteps.cs" />
     <Compile Include="Steps\HomeSteps.cs" />
     <Compile Include="Steps\LoginSteps.cs" />
   </ItemGroup>
@@ -99,12 +99,14 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Interface\ArticleManagePage.json" />
+    <None Include="Interface\CreateArticlePage.json" />
     <None Include="Interface\HomePage.json" />
     <None Include="Interface\LoginPage.json" />
     <None Include="packages.config" />
-    <None Include="Features\TC_JOOMLA_ARTICLE_001.feature">
+    <None Include="Features\TC_JOOMLA_ARTICLE.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>TC_JOOMLA_ARTICLE_001.feature.cs</LastGenOutput>
+      <LastGenOutput>TC_JOOMLA_ARTICLE.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
