@@ -8,34 +8,15 @@ using Joomla.Common;
 namespace Joomla.TestCases
 {
     [Binding]
-    public class TC_JOOMLA_ARTICLE_001Steps
+    public sealed class LoginSteps :LoginPage
     {
-        BaseAction Browser = new BaseAction();
-        private LoginPage LoginPage;
-        
-        [Given(@"Open Firefox Browser")]
-        public void GivenOpenFirefoxBrowser()
-        {
-            Browser.OpenBrowser();
-        }
-        
-        [Given(@"Navigate to the URL: ""(.*)""")]
-        public void GivenNavigateToTheURL(string URL)
-        {
-            Browser.navigateURL(URL);
-        }
 
         [Given(@"Enter username ""(.*)"" and password ""(.*)""")]
         public void GivenEnterUsernameAndPassword(string username, string password)
         {
-            LoginPage.Login(username,password);
+            Login(username,password);
         }
       
-        [Given(@"Click on Create Article link")]
-        public void GivenClickOnCreateArticleLink()
-        {
-            ScenarioContext.Current.Pending();
-        }
 
         [Given(@"Enter ""(.*)"" ""(.*)"" ""(.*)"" on Title, Category, Content field")]
         public void GivenEnterOnTitleCategoryContentField(string title, string category, string content)

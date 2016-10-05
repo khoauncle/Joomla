@@ -1,0 +1,7 @@
+﻿[
+  {
+    "controlName": "lnkNewArticle",
+    "type": "xpath",
+    "value": "//*[@id='content']/div/div/div[2]/div[1]/div/div/div/ul[1]/li[1]/a/span[2]"
+  }
+]

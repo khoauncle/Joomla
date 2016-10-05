@@ -10,10 +10,9 @@ using Joomla.Common;
 namespace Joomla
 {  
         
-   public class LoginPage:BaseAction
+   public class LoginPage : BaseAction
     {
-       
-         public void Login(string username, string password)
+        public void Login(string username, string password)
         {
             type("txtUserName", username);
             type("txtPassword", password);
@@ -28,5 +27,6 @@ namespace Joomla
         {
             type("txtPassword", password);
         }
+
     }
 }

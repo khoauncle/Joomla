@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Joomla.TestCases
+namespace Joomla.Features
 {
     using TechTalk.SpecFlow;
     
@@ -69,6 +69,8 @@ namespace Joomla.TestCases
 #line 6
 #line 7
  testRunner.Given("Open Firefox Browser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 8
+ testRunner.Given("Navigate to the URL: \"http://192.168.189.119/abyssal/administrator/index.php\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
         }
         
@@ -79,12 +81,10 @@ namespace Joomla.TestCases
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create new article with valid information", new string[] {
                         "mytag"});
-#line 9
+#line 10
 this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
-#line 10
- testRunner.Given("Navigate to the URL: \"http://192.168.189.119/abyssal/administrator/index.php\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 11
  testRunner.Given("Enter username \"long.ngoc.nguyen\" and password \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 12
